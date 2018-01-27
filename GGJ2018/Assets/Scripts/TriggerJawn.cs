@@ -10,7 +10,7 @@ public class TriggerScript : Transmission {
     public override void Interact()
     {
         player.GetComponent<Player>().SetCanMove(false);
-        TextPrompts.Instance.AddNewDialogue(prompt, name);
+        TextPrompts.Instance.AddNewPrompt(prompt, name);
         Debug.Log("RADIO"); //delete this
         StartCoroutine(CheckForPromptEnd());
     }
