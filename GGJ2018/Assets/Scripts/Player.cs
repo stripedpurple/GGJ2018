@@ -80,6 +80,7 @@ public class Player : MonoBehaviour {
 
         body2D.AddForce(new Vector2(forceX, forceY));
 
+
     }
     public void SetCanMove(bool yesOrNo)
     {

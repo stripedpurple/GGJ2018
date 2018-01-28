@@ -23,11 +23,13 @@ public class Transmission : MonoBehaviour {
         this.playerAgent = playerAgent;
         playerAgent.stoppingDistance = 3f;
         playerAgent.destination = transform.position;
+        player = GameObject.FindGameObjectWithTag("Player");
+
     }
 
     private void Awake()
     {
-        player = GameObject.FindGameObjectWithTag("Player");
+        //player = GameObject.FindGameObjectWithTag("Player");
         currentState = States.IDLE;
     }
 
