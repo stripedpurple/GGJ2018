@@ -90,7 +90,6 @@
     <Compile Include="Assets\Scripts\CameraFollow.cs" />
     <Compile Include="Assets\Scripts\ClickToContinue.cs" />
     <Compile Include="Assets\Scripts\CoinCollectible.cs" />
-    <Compile Include="Assets\Scripts\CoinTracker.cs" />
     <Compile Include="Assets\Scripts\Collectible.cs" />
     <Compile Include="Assets\Scripts\Collision\Collectable.cs" />
     <Compile Include="Assets\Scripts\Collision\CollisionState.cs" />
