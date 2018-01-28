@@ -99,6 +99,7 @@
     <Compile Include="Assets\Scripts\Items\FireBall.cs" />
     <Compile Include="Assets\Scripts\Items\PowerUpFlower.cs" />
     <Compile Include="Assets\Scripts\Managers\PlayerManager.cs" />
+    <Compile Include="Assets\Scripts\Music.cs" />
     <Compile Include="Assets\Scripts\NewCoinTracker.cs" />
     <Compile Include="Assets\Scripts\Pauser.cs" />
     <Compile Include="Assets\Scripts\Player.cs" />
