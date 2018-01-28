@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 
 
-public class TriggerScript : Transmission {
+public class TriggerJawn : Transmission {
 
     public string[] prompt;
 
