@@ -7,7 +7,7 @@ public class Player : MonoBehaviour {
     private bool canMove = true;
     public float speed = 10f;
     public Vector2 maxVelocity = new Vector2(60, 100);
-    public float jumpSpeed = 5f;
+    public float jumpSpeed = 200f;
     public bool standing;
     public float standingThreshold = 4f;
     public float airSpeedMultiplier = .3f;
@@ -57,11 +57,11 @@ public class Player : MonoBehaviour {
 
                 renderer2D.flipX = forceX < 0; //flip when changing direction line 1
             }
-            animator.SetBool("PlayerMove", true);
+            animator.SetInteger("Animator", 1);
         }
         else
         {
-            animator.SetBool("PlayerMove", false);
+            animator.SetInteger("Animator", 3);
         }
 
         if (controller.moving.y > 0)
@@ -69,13 +69,12 @@ public class Player : MonoBehaviour {
             if (absVelY < maxVelocity.y)
             {
                 forceY = jumpSpeed * controller.moving.y;
+                animator.SetInteger("Animator", 2);
             }
 
-            animator.SetBool("PlayerMove", true);
         }
         else if (absVelY > 0 && !standing)
         { //animates falling after a jump
-            animator.SetBool("PlayerMove", false);
         }
 
         body2D.AddForce(new Vector2(forceX, forceY));

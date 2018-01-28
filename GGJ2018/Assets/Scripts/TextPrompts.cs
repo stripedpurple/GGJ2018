@@ -17,8 +17,8 @@ public class TextPrompts : MonoBehaviour {
 
     void Awake()
     {
-        promptText = promptPanel.transform.Find("Text").GetComponent<Text>();
-        nameText = promptPanel.transform.Find("Name").GetChild(0).GetComponent<Text>();
+        promptText = promptPanel.transform.FindChild("Text").GetComponent<Text>();
+        nameText = promptPanel.transform.FindChild("Name").GetChild(0).GetComponent<Text>();
 
         promptPanel.SetActive(false);
 
