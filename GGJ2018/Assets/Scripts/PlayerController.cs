@@ -3,18 +3,20 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public class PlayerController : MonoBehaviour {
-
+    public Transform player;
     public Vector2 moving = new Vector2();
+    
 
     // Use this for initialization
     void Start()
     {
-
+        
     }
 
     // Update is called once per frame
     void Update()
     {
+        
 
         moving.x = moving.y = 0;
 
@@ -30,6 +32,7 @@ public class PlayerController : MonoBehaviour {
         if (Input.GetKey("up"))
         {
             moving.y = 1;
+            
         }
         else if (Input.GetKey("down"))
         {

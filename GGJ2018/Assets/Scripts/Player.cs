@@ -57,12 +57,10 @@ public class Player : MonoBehaviour {
 
                 renderer2D.flipX = forceX < 0; //flip when changing direction line 1
             }
-            //animator.SetBool("PlayerMove", true);
             animator.SetInteger("Animator", 1);
         }
         else
         {
-            //animator.SetBool("PlayerMove", false);
             animator.SetInteger("Animator", 3);
         }
 
@@ -74,11 +72,9 @@ public class Player : MonoBehaviour {
                 animator.SetInteger("Animator", 2);
             }
 
-            //animator.SetBool("PlayerMove", true);
         }
         else if (absVelY > 0 && !standing)
         { //animates falling after a jump
-            //animator.SetBool("PlayerMove", false);
         }
 
         body2D.AddForce(new Vector2(forceX, forceY));
