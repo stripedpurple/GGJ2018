@@ -8,7 +8,7 @@ public class CoinCollectible : MonoBehaviour {
     public int coinsToGive = 0;
     public Color debugColor = Color.yellow;
     private GameObject disableOnCollect = null;
-
+    
 
     void OnDrawGizmos()
     {
